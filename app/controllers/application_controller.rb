@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   def hello
-    render html: "hello, world!"
+    today = Time.new
+    render html: "hello, world! #{today}"  
   end
 end
